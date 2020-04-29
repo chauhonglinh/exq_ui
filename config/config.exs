@@ -16,7 +16,7 @@ config :exq,
   genserver_timeout: 5000,
   max_retries: 25
 
-config :exq_ui,
+config :lc_exq_ui,
   web_port: 4040,
   web_namespace: "",
   server: true
