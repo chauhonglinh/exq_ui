@@ -17,7 +17,7 @@ defmodule ExqUi do
       {:ok, _} = Exq.start_link(name: ExqUi, mode: :api)
     end
 
-    {:ok, _} = Exq.Api.queue_size(api_name)
+    {_status, _} = Exq.Api.queue_size(api_name)
 
     if run_server? do
       IO.puts "Starting ExqUI on Port #{web_port}"
